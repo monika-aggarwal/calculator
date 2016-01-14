@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
+
+
+
+</head>
+<body>
+<div class="calc">
+
+<div class="screen">
+
+<input type="text" id="txt" class="textfield" onkeyup="if(event.keyCode==13){
+                                                          result();
+                                                       }
+                                                       else{
+                                                       check();
+                                                       }" autofocus></input>
+</div>
+
+
+<button type="button" onclick="values(1)" class="button">1</button>
+<button type="button" onclick="values(2)" class="button">2</button>
+<button type="button" onclick="values(3)" class="button">3</button>
+<button type="button" onclick="values('+')" class="button">+</button><br>
+
+
+<button type="button" onclick="values(4)" class="button">4</button>
+<button type="button" onclick="values(5)" class="button">5</button>
+<button type="button" onclick="values(6)" class="button">6</button>
+<button type="button" onclick="values('-')" class="button">-</button><br>
+
+
+<button type="button" onclick="values(7)" class="button">7</button>
+<button type="button" onclick="values(8)" class="button">8</button>
+<button type="button" onclick="values(9)" class="button">9</button>
+<button type="button" onclick="values('/')" class="button">/</button><br>
+
+<button type="button" onclick="backspace()" class="button">C</button>
+<button type="button" onclick="values(0)" class="button">0</button>
+<button type="button" onclick="values('.')" class="button">.</button>
+<button type="button" onclick="values('*')" class="button">*</button><br>
+
+<button type="button" onclick="result()" class="button">=</button>
+<button type="button" onclick="values('(')" class="button">(</button>
+<button type="button" onclick="values(')')" class="button">)</button>
+<button type="button" class="button" onclick="cleartext()">clear</button>
+
+
+</div>
+</body>
+
+</html>
